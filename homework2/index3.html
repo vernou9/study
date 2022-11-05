@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
 <body>
     <form
@@ -14,15 +13,16 @@
     name="zayavka"
     action="/zayavka.php"
   >
-    <p class="caption">Записаться онлайн</p>
-    <div class="infofield">Тип стрижки:</div>
+    <p style="font-size:medium; color: cyan;"  class="caption">Записаться онлайн</p>
+
+    <div style="font-size:medium; color: rgb(30, 255, 0);" class="infofield">Тип стрижки:</div>
     <select name="service_type">
       <option>Стрижка</option>
       <option>Стрижка бороды</option>
       <option selected="selected">Стрижка + Борода</option>
     </select>
 
-    <div class="infofield">Уровень специалиста:</div>
+    <div  class="infofield">Уровень специалиста:</div>
     <label><input type="radio" name="master" value="1" />Стажер</label>
     <label
       ><input
@@ -30,19 +30,19 @@
         name="master"
         value="2"
         checked="checked"
-      />Барбер</label>
-      
+      />Барбер</label
+    >
     <label><input type="radio" name="master" value="3" />VIP Барбер</label>
 
     <div class="infofield">Дополнительные услуги:</div>
-    <label><input type="checkbox" name="massage" /> Массаж головы</label>
+    <label style="font-size:medium; color: rgb(55, 0, 255);"><input type="checkbox" name="massage" /> Массаж головы</label>
     <label><input type="checkbox" name="razor" /> Опасная бритва</label>
 
     <div class="infofield">Дата и время записи:</div>
     <input type="datetime-local" name="date_time" />
 
-    <fieldset>
-      <legend>Контактная информация</legend>
+    <fieldset style="background-color: rgba(15, 179, 15, 0.3) ;">
+      <legend style="">Контактная информация</legend>
       <div class="infofield">Ваше имя:</div>
       <input type="text" name="name" placeholder="введите ваше имя" />
 

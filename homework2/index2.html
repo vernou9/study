@@ -5,7 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <style>
+        div{
+         margin: 10px; 
+         font-family: "Times New Roman", Georgia, Serif;  
+        }  
+        input{
+            padding: 30px;
+        }  
+    </style>
 </head>
 <body>
     <form
@@ -14,7 +22,8 @@
     name="zayavka"
     action="/zayavka.php"
   >
-    <p class="caption">Записаться онлайн</p>
+    <p  class="caption">Записаться онлайн</p>
+
     <div class="infofield">Тип стрижки:</div>
     <select name="service_type">
       <option>Стрижка</option>
@@ -30,8 +39,8 @@
         name="master"
         value="2"
         checked="checked"
-      />Барбер</label>
-      
+      />Барбер</label
+    >
     <label><input type="radio" name="master" value="3" />VIP Барбер</label>
 
     <div class="infofield">Дополнительные услуги:</div>
