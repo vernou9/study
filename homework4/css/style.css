@@ -1,0 +1,16 @@
+h1{
+    z-index: 1;
+    position: sticky;
+    top: 0;
+    margin-left: 30%;
+    margin-top: 20%;
+    color: white;
+    font-style: normal;
+    font-size: 200px;
+    
+}
+.bckf{
+    background: linear-gradient(135deg, rgba(125, 21, 203, 0.6), rgba(125, 21, 203, 0.6)),
+      url("https://i.pinimg.com/originals/b7/36/bb/b736bbe17843635bfec4f75d4824dfea.jpg");
+      background-size:cover;
+  }
