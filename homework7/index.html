@@ -13,7 +13,7 @@
 </head>
 <body>
   <p>account</p>
-  <label for="name"> Имя </label> <input type="text" id="name" onchange="namech()">
+  <label for="name"> Имя </label> <input type="text" id="name" onchange="namech()" >
   <br>
   <label for="secondname">Фамилия </label> <input type="text" id="secondname" onchange="namech()"> 
   <br>
@@ -33,5 +33,24 @@
     <br>
     <label for="uncashv"> Расход </label> <input type="text" id="uncashv">
     </form>
+    <script>
+        window.onload = function() {
+            if  (localStorage.namel=="") {
+                document.getElementById("name").value=""
+            } else {document.getElementById("name").value=localStorage.namel}
+            if  (localStorage.secondnamel=="") {
+                document.getElementById("secondname").value=""
+            } else {document.getElementById("secondname").value=localStorage.secondnamel}
+            if (localStorage.secondnamel=="") {
+                document.getElementById("cash").value=""
+            } else {document.getElementById("cash").value=localStorage.cashl}
+            if (localStorage.uncashl=="") {
+                document.getElementById("uncash").value=""
+            } else {
+                document.getElementById("uncash").value=localStorage.uncashl;
+            }
+            
+        }
+    </script>
 </body>
 </html>

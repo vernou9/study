@@ -11,18 +11,21 @@ function namech() {
     
 }
 function perenesti() {
-    localStorage.namel=document.getElementById("name").value
-    localStorage.secondnamel=document.getElementById("secondname").value
-    localStorage.cashl=document.getElementById("cash").value
-    localStorage.uncashl=document.getElementById("uncash").value
-
-    document.getElementById("name").value="" 
+    const users = [
+      name=document.getElementById("name").value,
+      secondname=document.getElementById("secondname").value,
+      cash=document.getElementById("cash").value,
+      uncash=document.getElementById("uncash").value,
+    ]
+    console.log(users)
+    localStorage.namel=users[0]
+    localStorage.secondnamel=users[1]
+    localStorage.cashl=users[2]
+    localStorage.uncashl=users[3]
+    
     document.getElementById("namev").value=""
-    document.getElementById("secondname").value=""
     document.getElementById("secondnamev").value=""
-    document.getElementById("cash").value=""
     document.getElementById("cashv").value=""
-    document.getElementById("uncash").value=""
     document.getElementById("uncashv").value=""
 
 
