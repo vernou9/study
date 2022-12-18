@@ -52,11 +52,11 @@ class Aspirant extends Student {
 
 let u1= new Person("ivi","25")
 u1.talk()
-let s1= new Student ("ter","ret","132",4.5)
+let s1= new Student ("ter","mm","132",4.5)
 s1.print()
 s1.schoolarship()
 
-let a1= new Aspirant ("ter","ver","2132",3.5)
+let a1= new Aspirant ("ter","ver","2132",5)
 a1.print()
 a1.schoolarship()
 
