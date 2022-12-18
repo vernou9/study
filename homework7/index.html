@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    form {
+        border: 3px solid}
+    </style>   
+    <script src="script.js"></script>
+</head>
+<body>
+  <p>account</p>
+  <label for="name"> Имя </label> <input type="text" id="name" onchange="namech()">
+  <br>
+  <label for="secondname">Фамилия </label> <input type="text" id="secondname" onchange="namech()"> 
+  <br>
+  <label for="cash">Доход </label><input type="number" id="cash" onchange="namech()">
+  <br>
+  <label for="uncash">Расход </label><input type="text" id="uncash" onchange="namech()"> 
+  <br>
+  <input type="button" onclick="perenesti()" value="Добавить">
+  <br>
+  <label for="itog"> Итоговоые данные</label>  
+  <form action="" id="itog">
+    <label for="namev"> Имя </label> <input type="text" id="namev">
+    <br>
+    <label for="secondnamev"> Фамилия </label> <input type="text" id="secondnamev">
+    <br>
+    <label for="cashv"> Доход </label> <input type="text" id="cashv">
+    <br>
+    <label for="uncashv"> Расход </label> <input type="text" id="uncashv">
+    </form>
+</body>
+</html>
