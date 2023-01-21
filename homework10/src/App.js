@@ -6,7 +6,6 @@ import { useState } from 'react';
 
 function Laptop() {
   const[info, setInfo]= useState({brand:"Apple",model:"Macbook pro",year :"2023", color:"Space gray"}) 
-  
   return (
     <div className='App'>
       <header className='App-header'>
@@ -14,11 +13,15 @@ function Laptop() {
       <p >
         It is a {info.color} {info.model} from {info.year}.
       </p>
+      <button onClick={changeS}> maybe silver? </button>
       </header>
-      <button> silver </button>
     </div>
   )
   }
   
 
 export default Laptop;
+
+function changeS() {
+   
+}
